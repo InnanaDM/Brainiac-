@@ -1,3 +1,23 @@
 * {
     background-image: url("neonBub2.jpg");
 }
+
+
+input{
+    width: 220px;
+    height: 130px;
+    font-size: 90px;
+    color: white;
+    border-radius: 22px;
+    border-width: 10px;
+    border-color: greenyellow;
+    background: greenyellow;
+    padding: 2px;
+    font-weight: 800;
+}
+
+form {
+    text-align: center;
+    margin-top: 150px;
+}
+
