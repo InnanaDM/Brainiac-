@@ -35,14 +35,32 @@
     // !FUNCTION CHECK END OF GAME
 
     function check() {
-        if((correct+wrong) ! = 0){
-            score = "" + ((correct / (correct + wrong)) * 100);
-            score = score.substring(0,4) + "%";
-            alert("Your Score: " + score + "\n"
-            + correct + " correct\n" + wrong + "incorrect") 
-        } else alert("you did not do anything.");
-    }
+        if ((correct+wrong) != 0) {
+        score = "" + ((correct / (correct + wrong)) * 100);
+        score = score.substring(0,4) + "%";
+        alert("YOUR SCORE:  " + score + "\n"
+        + correct + " correct\n"
+        + wrong + " incorrect")
         }
+        else alert("You have not completed any exercises yet.");
+        }
+        function ans() {
+        if (Answer == numC) {
+        correct++;
+        msg = "Congratulations, your answer is correct.";
+        }
+        else {
+        wrong++;
+        msg = "Oops!  " + Answer + " is incorrect.\n\n"
+        + "The correct answer was " +numC + ".";
+           }
+        score = "" + ((correct / (correct + wrong)) * 100);
+        score = score.substring(0,4) + "%";
+        alert(msg + "\n\nYOUR SCORE:  " + score + "\n"
+        + correct + " correct\n"
+        + wrong + " incorrect")
+        }
+        
     
     
 
