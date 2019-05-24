@@ -55,7 +55,7 @@ input.score {
 
 h1 {
     text-align: center;
-    font-size: 100px;
+    font-size: 250px;
     color: white;
     font-weight: 900;
     outline-color: chocolate;
@@ -66,7 +66,7 @@ h1 {
 .outline {
     -webkit-text-stroke-width: 5px;
     -webkit-text-stroke-color: cyan;
-    font-size: 120px;
+    font-size: 150px;
     text-align: center;
     color: orange;
     font-weight: 900;
