@@ -16,13 +16,16 @@ input{
     font-weight: 800;
     margin-bottom: 70px;
     margin-right: 30px;
-    margin-top: 70px;
+    /* margin-top: 50px; */
     margin-left: 30px;
+    outline: none;
+    text-align: center;
 }
 
 form {
     text-align: center;
     margin-top: 150px;
     background: aliceblue;
+    padding-top: 70px;
 }
 
