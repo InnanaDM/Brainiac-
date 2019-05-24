@@ -1,7 +1,11 @@
 * {
-    background: black;
+    /* background: black; */
 }
 
+.container {
+    background: black;
+    width: 1200px;
+}
 
 input{
     width: 220px;
@@ -56,6 +60,7 @@ h1 {
     font-weight: 900;
     outline-color: chocolate;
     outline-width: 220px;
+   
 }
 
 .outline {
@@ -71,10 +76,10 @@ h1 {
 }
 
 
-div.nav-wrapper {
+/* div.nav-wrapper {
     background: yellow;
     margin-bottom: 170px;
 
-}
+} */
 
 
