@@ -42,17 +42,17 @@
         + correct + " correct\n"
         + wrong + " incorrect")
         }
-        else alert("You have not completed any exercises yet.");
+        else alert("You haven't answered anything yet.");
         }
         function ans() {
         if (Answer == numC) {
         correct++;
-        msg = "Congratulations, your answer is correct.";
+        msg = "Hey, Braniac! Your answer is correct.";
         }
         else {
         wrong++;
-        msg = "Oops!  " + Answer + " is incorrect.\n\n"
-        + "The correct answer was " +numC + ".";
+        msg = "LOL  " + Answer + " is incorrect.\n\n"
+        + "Obviously the correct answer was " +numC + ".";
            }
         score = "" + ((correct / (correct + wrong)) * 100);
         score = score.substring(0,4) + "%";
