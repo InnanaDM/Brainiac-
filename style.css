@@ -67,8 +67,14 @@ h1 {
     font-weight: 900;
     background-image: url("neonBub2.jpg");
     padding: 20px;
-    
+
 }
 
+
+div.nav-wrapper {
+    background: yellow;
+    margin-bottom: 170px;
+
+}
 
 
