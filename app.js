@@ -22,6 +22,8 @@
     }
 
     function add() {
+
+        // if add button clicked create if/else
         var maxValue=60;
 
         numA=random(maxValue);
@@ -30,39 +32,52 @@
 
         Answer = window.prompt( numA + "+" + numB + "=", "");
         ans();
-    };
+    }
 
-    // !FUNCTION CHECK END OF GAME
+    function subtract() {
+        maxValue=60;
 
-    function check() {
-        if ((correct+wrong) != 0) {
+        numA=random(maxValue);
+        numB=ranom(maxValue);
+        numC=numA - numB;
+        Answer=window.prompt(  numA + "-"  + numB+  " = ", 0);
+        ans();
+}
+
+
+
+
+// !FUNCTION CHECK END OF GAME
+
+function check() {
+    if ((correct+wrong) != 0) {
         score = "" + ((correct / (correct + wrong)) * 100);
         score = score.substring(0,4) + "%";
         alert("YOUR SCORE:  " + score + "\n"
         + correct + " correct\n"
         + wrong + " incorrect")
-        }
-        else alert("You haven't answered anything yet.");
-        }
-        function ans() {
-        if (Answer == numC) {
+    }
+    else alert("You haven't answered anything yet.");
+}
+function ans() {
+    if (Answer == numC) {
         correct++;
         msg = "Hey, Braniac! Your answer is correct.";
-        }
-        else {
+    }
+    else {
         wrong++;
         msg = "LOL  " + Answer + " is incorrect.\n\n"
         + "Obviously the correct answer was " +numC + ".";
-           }
-        score = "" + ((correct / (correct + wrong)) * 100);
-        score = score.substring(0,4) + "%";
-        alert(msg + "\n\nYOUR SCORE:  " + score + "\n"
-        + correct + " correct\n"
-        + wrong + " incorrect")
-        }
-        
-    
-    
+    }
+    score = "" + ((correct / (correct + wrong)) * 100);
+    score = score.substring(0,4) + "%";
+    alert(msg + "\n\nYOUR SCORE:  " + score + "\n"
+    + correct + " correct\n"
+    + wrong + " incorrect")
+}
+
+
+
 
 
 
