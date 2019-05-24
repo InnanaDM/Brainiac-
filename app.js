@@ -21,7 +21,7 @@
         return((mil) % maxValue);
     }
 
-    var add = function() {
+    function add() {
         var maxValue=60;
 
         numA=random(maxValue);
@@ -30,8 +30,20 @@
 
         Answer = window.prompt( numA + "+" + numB + "=", "");
         ans();
-    }
+    };
 
+    // !FUNCTION CHECK END OF GAME
+
+    function check() {
+        if((correct+wrong) ! = 0){
+            score = "" + ((correct / (correct + wrong)) * 100);
+            score = score.substring(0,4) + "%";
+            alert("Your Score: " + score + "\n"
+            + correct + " correct\n" + wrong + "incorrect") 
+        } else alert("you did not do anything.");
+    }
+        }
+    
     
 
 
