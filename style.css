@@ -14,10 +14,15 @@ input{
     background: greenyellow;
     padding: 2px;
     font-weight: 800;
+    margin-bottom: 70px;
+    margin-right: 30px;
+    margin-top: 70px;
+    margin-left: 30px;
 }
 
 form {
     text-align: center;
     margin-top: 150px;
+    background: aliceblue;
 }
 
