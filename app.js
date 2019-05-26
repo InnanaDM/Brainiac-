@@ -92,6 +92,8 @@
                 }
             }
 
+            // *rounding nums to make easier plus was getting weird numbers from random funct
+
             num1=random(maxValue)+1;
             num2=random2(maxValue)+1;
             num3=num2 / num2;
@@ -143,16 +145,16 @@ function check() {
     else alert("You haven't answered anything yet.");
 }
 
-
+// sets answer
 function ans() {
-    if (Answer == numC) {
+    if (answer == num3) {
         correct++;
         msg = "Hey, Braniac! Your answer is correct.";
     }
     else {
         wrong++;
-        msg = "LOL  " + Answer + " is incorrect.\n\n"
-        + "Obviously the correct answer was " +numC + ".";
+        msg = "LOL  " + answer + " is incorrect.\n\n"
+        + "Obviously the correct answer was " +num3 + ".";
     }
     score = "" + ((correct / (correct + wrong)) * 100);
     score = score.substring(0,4) + "%";
