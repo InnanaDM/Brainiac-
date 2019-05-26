@@ -68,13 +68,64 @@
 
             num1 = random(maxValue);
             num2 = random2(maxValue);
-            num3 = num1 + num2;
+            num3 = num1 - num2;
 
-            answer = window.prompt( num1 + "-" + num2 + " = ", 0);
+           
+            answer = window.prompt( num1 + " -" + num2 + " = ", "");
             ans();
 
-        }
+            
 
+        }
+        // !end of SUB func
+
+        var divide = function () {
+            if(document.quizForm.arithmetic[0].checked) {
+                maxValue = 15;
+            }
+            else {
+                if(document.quizForm.arithmetic[1].checked) {
+                    maxValue = 45;
+                }
+                else {
+                    maxValue = 70;
+                }
+            }
+
+            num1=random(maxValue)+1;
+            num2=random2(maxValue)+1;
+            num3=num2 / num2;
+            num3=Math.round(num3)
+            window.alert("Please round your answer:\n"
+            +".5 or higher rounds one number up\n"
+            +".4 or lower rounds one number down");
+            answer = window.prompt(  num1 + "÷"  + num2 +  " = ", 0);
+            ans();
+        }
+        // !end of DIVIDE funct!
+
+        var multiply = function() {
+            if(document.quizForm.arithmetic[0].checked) {
+                maxValue=15;
+            }
+            else {
+                if(document.quizForm.arithmetic[1].checked) {
+                    maxValue = 45;
+                }
+                else {
+                    maxValue = 70;
+                }
+            }
+
+            num1 = random(maxValue);
+            num2 = random2(maxValue);
+            num3 = num1 * num2;
+
+           
+            answer = window.prompt( num1 + " *" + num2 + " = ", "");
+            ans();
+        }
+        // !end of MULTIPLY funct
 
 
 
