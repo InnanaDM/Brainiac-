@@ -1,10 +1,10 @@
 * {
-    /* background: black; */
+    background: black;
 }
 
 .container {
-    background: black;
-    width: 1200px;
+    
+    width: 100%;
 }
 
 input{
@@ -76,10 +76,10 @@ h1 {
 }
 
 
-/* div.nav-wrapper {
+div.nav-wrapper {
     background: yellow;
-    margin-bottom: 170px;
+    margin-bottom: 70px;
 
-} */
+}
 
 
