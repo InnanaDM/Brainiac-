@@ -2,9 +2,11 @@
 
     console.log("ready!");
 
+    // sets score
      correct=0;
      wrong=0;
 
+        // lets computer find a random number, backwards weird way to do it have to come up with better logic
     const random = function (maxValue) {
         day= new Date();
         hour= day.getHours();
@@ -17,7 +19,7 @@
     }
     // *end of random func
 
-
+    // new number generated
     const random2 = function (maxValue) {
         day=new Date();
         mil=day.getTime();
@@ -39,6 +41,20 @@
                     maxValue=100;
                 }
             }
+            // makes computer know to add num1 + num2 to get num3
+            num1 = random(maxValue);
+            num2 = random2(maxValue);
+            num3 = num1 + num2;
+
+            answer = window.prompt( num1 + " +" + num2 + " = ", "");
+            ans();
+        }
+        // !end of add function must repeat
+        // ?good logic understand
+        
+
+            
+            
 
 
          
