@@ -1,10 +1,10 @@
 * {
-    /* background: black; */
+    background: black;
 }
 
 .container {
-    background: black;
-    width: 1200px;
+    
+    width: 100%;
 }
 
 input{
@@ -34,6 +34,11 @@ form {
     border-radius: 13px;
 }
 
+div.scoresBox {
+    text-align: center;
+    margin: 30px;
+}
+
 input.score {
     width: 240px;
     height: 80px;
@@ -52,6 +57,7 @@ input.score {
     outline: none;
     text-align: center;
 }
+
 
 h1 {
     text-align: center;
@@ -76,10 +82,10 @@ h1 {
 }
 
 
-/* div.nav-wrapper {
+div.nav-wrapper {
     background: yellow;
-    margin-bottom: 170px;
+    margin-bottom: 70px;
 
-} */
+}
 
 

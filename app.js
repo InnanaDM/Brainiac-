@@ -31,7 +31,7 @@
     function add() {
 
         // if add button clicked create if/else
-            if(document.quizForm.arithmetic[0].checked)
+            if(document.quizForm.arithmetic[0].checked) 
             maxValue=15;
             else {
                 if(document.quizForm.arithmetic[1].checked)
@@ -139,8 +139,11 @@ function check() {
         + correct + " correct\n"
         + wrong + " incorrect")
     }
+
     else alert("You haven't answered anything yet.");
 }
+
+
 function ans() {
     if (Answer == numC) {
         correct++;
