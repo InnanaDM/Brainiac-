@@ -41,39 +41,39 @@
                     maxValue=100;
                 }
             }
-            // makes computer know to add num1 + num2 to get num3
+            // makes computer know to add num1 and num2 to get num3
             num1 = random(maxValue);
             num2 = random2(maxValue);
             num3 = num1 + num2;
 
+            // will display num1 + num2 and give real/correct answer
             answer = window.prompt( num1 + " +" + num2 + " = ", "");
             ans();
         }
-        // !end of add function must repeat
-        // ?good logic understand
-        
+        // !end of ADD function must repeat
+        // ?good logic understood
 
-            
-            
+        var subtract = function() {
+            if(document.quizForm.arithmetic[0].checked) {
+                maxValue=15;
+            }
+            else {
+                if(document.quizForm.arithmetic[1].checked) {
+                    maxValue = 45;
+                }
+                else {
+                    maxValue = 70;
+                }
+            }
 
+            num1 = random(maxValue);
+            num2 = random2(maxValue);
+            num3 = num1 + num2;
 
-         
-        
-        // numA=random(maxValue);
-        // numB=random2(maxValue);
-        // numC=numA + numB;
+            answer = window.prompt( num1 + "-" + num2 + " = ", 0);
+            ans();
 
-        // Answer = window.prompt( numA + "+" + numB + "=", "");
-        // ans();
-        function subtract() {
-        maxValue=60;
-
-        numA=random(maxValue);
-        numB=ranom(maxValue);
-        numC=numA - numB;
-        Answer=window.prompt(  numA + "-"  + numB+  " = ", 0);
-        ans();
-}
+        }
 
 
 
