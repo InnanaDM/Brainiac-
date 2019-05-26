@@ -34,6 +34,11 @@ form {
     border-radius: 13px;
 }
 
+div.scoresBox {
+    text-align: center;
+    margin: 30px;
+}
+
 input.score {
     width: 240px;
     height: 80px;
@@ -52,6 +57,7 @@ input.score {
     outline: none;
     text-align: center;
 }
+
 
 h1 {
     text-align: center;
