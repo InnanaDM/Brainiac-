@@ -2,8 +2,8 @@
 
     console.log("ready!");
 
-    var correct=0;
-    var wrong=0;
+     correct=0;
+     wrong=0;
 
     const random = function (maxValue) {
         day= new Date();
@@ -11,30 +11,44 @@
         sec= day.getSeconds();
         min= day.getMinutes();
 
-        mili=day.getTime();
+        mil=day.getTime();
 
         return (((hour*3600) + (min*60) + (sec) + milli) % maxValue);
     }
+    // *end of random func
+
+
     const random2 = function (maxValue) {
         day=new Date();
         mil=day.getTime();
         return((mil) % maxValue);
     }
 
+    // *end of random2 funct
+
     function add() {
 
         // if add button clicked create if/else
-        var maxValue=60;
+            if(document.quizForm.arithmetic[0].checked)
+            maxValue=15;
+            else if {
+                (document.quizForm.arithmetic[1].checked)
+                maxValue=45;
+                
+            } else {
+                maxValue=75;
+            }
 
-        numA=random(maxValue);
-        numB=random2(maxValue);
-        numC=numA + numB;
 
-        Answer = window.prompt( numA + "+" + numB + "=", "");
-        ans();
-    }
+        }
+        
+        // numA=random(maxValue);
+        // numB=random2(maxValue);
+        // numC=numA + numB;
 
-    function subtract() {
+        // Answer = window.prompt( numA + "+" + numB + "=", "");
+        // ans();
+        function subtract() {
         maxValue=60;
 
         numA=random(maxValue);
