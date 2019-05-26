@@ -1,4 +1,4 @@
-(() => {
+
 
     console.log("ready!");
 
@@ -13,7 +13,7 @@
 
         mil=day.getTime();
 
-        return (((hour*3600) + (min*60) + (sec) + milli) % maxValue);
+        return (((hour*3600) + (min*60) + (sec) + mil) % maxValue);
     }
     // *end of random func
 
@@ -31,16 +31,17 @@
         // if add button clicked create if/else
             if(document.quizForm.arithmetic[0].checked)
             maxValue=15;
-            else if {
-                (document.quizForm.arithmetic[1].checked)
+            else {
+                if(document.quizForm.arithmetic[1].checked)
                 maxValue=45;
-                
-            } else {
-                maxValue=75;
+
+                else{
+                    maxValue=100;
+                }
             }
 
 
-        }
+         
         
         // numA=random(maxValue);
         // numB=random2(maxValue);
@@ -98,4 +99,4 @@ function ans() {
 
 
 
-})();
+
