@@ -107,8 +107,8 @@
         // !end of DIVIDE funct!
 
         var multiply = function() {
-            if(document.quizForm.arithmetic[0].checked) {
-                maxValue=15;
+            if (document.quizForm.arithmetic[0].checked) {
+                var maxValue =15;
             }
             else {
                 if(document.quizForm.arithmetic[1].checked) {
